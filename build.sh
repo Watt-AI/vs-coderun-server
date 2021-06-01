@@ -1,1 +1,0 @@
-docker build . -t code-server-python:latest

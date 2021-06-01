@@ -3,3 +3,5 @@ models/
 .idea/
 __pycache__
 *~
+user_data/
+!user_data/User/
