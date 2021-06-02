@@ -5,6 +5,7 @@ docker run -it --rm --name code-server -p 0.0.0.0:8080:8080 \
   -v "$PWD/config.yaml:/home/coder/config.yaml" \
   -u "$(id -u):$(id -g)" \
   -e "DOCKER_USER=$USER" \
+  --env PORT=1234 \
   code-server-python:latest \
   --config /home/coder/config.yaml \
   --disable-update-check \
