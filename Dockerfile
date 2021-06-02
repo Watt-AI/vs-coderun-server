@@ -7,8 +7,8 @@ RUN sudo wget https://www.python.org/ftp/python/3.9.5/Python-3.9.5.tgz
 RUN sudo tar xvf Python-3.9.5.tgz ; cd Python-3.9.5 ; sudo ./configure --enable-optimizations ; sudo make altinstall
 RUN sudo rm -rf Python-3.9.5*
 
-
 # python dependencies
-COPY requirements.txt ./
+ARG project_dir
+COPY $project_dir/requirements.txt ./
 RUN pip3.9 install -r requirements.txt
 RUN rm requirements.txt
