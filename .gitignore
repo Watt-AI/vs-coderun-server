@@ -3,6 +3,10 @@ models/
 .idea/
 __pycache__
 *~
-user_data/*
-!user_data/User/
-user_data/User/state/*
+user_data/CachedExtensionVSIXs/*
+user_data/User/*
+!user_data/User/settings.json
+user_data/extensions/*
+!user_data/extensions/README.txt
+user_data/logs/*
+user_data/machineid
