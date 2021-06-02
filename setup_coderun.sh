@@ -6,7 +6,6 @@ mkdir -p ~/.config
 docker run -it --rm --name code-server \
   -v "$HOME/.config:/home/coder/.config" \
   -v "$PWD:/home/coder/project" \
-  -v "$PWD/usr_data_dir:/home/coder/usr_data_dir" \
   -u "$(id -u):$(id -g)" \
   -e "DOCKER_USER=$USER" \
   code-server-python:latest \
