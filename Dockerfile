@@ -12,6 +12,3 @@ RUN sudo rm -rf Python-3.9.5*
 COPY requirements.txt ./
 RUN pip3.9 install -r requirements.txt
 RUN rm requirements.txt
-
-# copy configs
-COPY config.yaml ./
