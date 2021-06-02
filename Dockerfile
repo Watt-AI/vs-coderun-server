@@ -8,7 +8,6 @@ RUN sudo tar xvf Python-3.9.5.tgz ; cd Python-3.9.5 ; sudo ./configure --enable-
 RUN sudo rm -rf Python-3.9.5*
 
 # python dependencies
-ARG project_dir
-COPY $project_dir/requirements.txt ./
+COPY requirements.txt ./
 RUN pip3.9 install -r requirements.txt
 RUN rm requirements.txt

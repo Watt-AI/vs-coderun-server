@@ -1,4 +1,7 @@
+cp $CR_PROJECT_DIR/requirements.txt ./
 docker build --build-arg project_dir=$CR_PROJECT_DIR . -t code-server-python:latest
+rm requirements.txt
+
 
 # install extensions
 docker run -it --rm \

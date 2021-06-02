@@ -13,9 +13,9 @@ rm -rf .git
 2. Add any python requirements to the `requirements.txt` folder.
 3. Set the desired port and project directory
 ```shell
-export PORT=<port>
-export PROJECT_DIR=<project_dir>
-export CONTAINER_NAME=<container_name>
+export CR_PORT=<port>
+export CR_PROJECT_DIR=<project_dir>
+export CR_CONTAINER_NAME=<container_name>
 ```
 Alternatively, edit the `set_envs.sh` script with your desired environment variables and then
 execute `source set_envs.sh` to set the variables.
