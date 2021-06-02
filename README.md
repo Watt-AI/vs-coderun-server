@@ -12,17 +12,21 @@ rm -rf .git
 ```
 
 2. Add any python requirements to the `requirements.txt` folder.
+3. Set the desired port
+```shell
+export PORT=<port>
+```
 
-3. From within `vs-coderun-server/`, execute
+4. From within `vs-coderun-server/`, execute
 ```shell
 sh setup_coderun.sh
 ```
 This first builds the docker image then installs the python extensions. This compiles python from scratch for performance
 reasons and can take a few minutes.
 
-4. Within the coderun folder, Edit the `config.yaml` file to use the desired port. 
+5. Within the coderun folder, Edit the `config.yaml` file to use the desired port. 
 
-5. Navigate up to your project directory and execute the following comand to run the server
+6. Navigate up to your project directory and execute the following comand to run the server
 ```shell
 sh vs-coderun-server/run.sh
 ```
