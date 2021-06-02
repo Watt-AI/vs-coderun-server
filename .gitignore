@@ -5,3 +5,4 @@ __pycache__
 *~
 user_data/*
 !user_data/User/
+user_data/User/state/*
