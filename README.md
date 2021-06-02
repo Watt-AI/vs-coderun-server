@@ -49,7 +49,7 @@ You can detach the terminal without killing the server by pressing `ctrl+p, ctrl
 # Accessing the server
 Connect to the remote machine with
 ```shell
-ssh -L <port>:localhost:<port> <username>@host
+ssh -L <port>:localhost:<port> <username>@<host>
 ```
 In your browser, navigate to `http://localhost:<port>`. 
 
