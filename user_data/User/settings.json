@@ -2,8 +2,8 @@
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 1000,
     "python.diagnostics.sourceMapsEnabled": true,
-    "python.linting.pylintEnabled": false,
-    "python.linting.flake8Enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.flake8Enabled": false,
     "workbench.colorTheme": "Visual Studio Dark",
     "workbench.editorAssociations": [
         {
