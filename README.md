@@ -5,11 +5,12 @@ a deployment of the code
 maintained at https://github.com/cdr/code-server customized for data science in python.  
 
 # Setting up a new deployment
-1. **Server source code:** In a terminal, navigate to the directory for your project to download to prepare the code needed to serve coderun
+1. **Server source code:** In a terminal, navigate to the your desired directory and run
 ```shell
-echo "vs-coderun-server/" >> .gitignore
 git clone https://github.com/Watt-AI/vs-coderun-server.git
 ```
+Note that this directory can (should) be different from your project directory. 
+
 2. **Required environment variables:** You must the following environment variables for the server
 to run correctly: 
     * `CR_PORT`: this is the port number for the web-server.
@@ -26,22 +27,17 @@ export CR_PROJECT_DIR=<project_dir>
 export CR_CONTAINER_NAME=<container_name>
 ```
 
-Alternatively, edit the `set_envs.sh` script with your desired environment variables and then
-execute `source set_envs.sh` to set the variables.
-3. **Dependencies:** the deploy script looks for a `requirements.txt` 
-   file in `CR_PROJECT_DIR`. The dependencies listed in this file 
-   are installed via pip while building the docker image. 
+Alternatively, copy/customize one of the files in `envs/` script with your desired environment variables and then
+execute `source <filename>.sh` to set the variables. This is better as you will have a clear record of the variables.
    
-4. **Setup script:** From within `vs-coderun-server/`, execute
+3. **Setup script:** From within `vs-coderun-server/`, execute
 ```shell
 sh setup_coderun.sh
 ```
 This script builds the docker image with any dependencies then 
-installs the VSCode python extensions. For performance reasons, 
-the build involves compiling python from scratch. This can take
-a few minutes.
+installs the VSCode python extensions. Installing the python dependencies can take some time.
 
-5. **Startup script:** Start the server by running
+4. **Startup script:** Start the server by running
 ```shell
 sh run.sh
 ```
@@ -53,5 +49,5 @@ Connect to the remote machine with
 ```shell
 ssh -L <port>:localhost:<port> <username>@<host>
 ```
-In your browser, navigate to `http://localhost:<port>`. 
+In your browser, navigate to `http://localhost:<port>`. VS Code should then open automatically. 
 
