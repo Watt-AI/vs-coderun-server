@@ -7,6 +7,7 @@ jupyterlab
 matplotlib
 numpy
 pandas
+pep8
 pylint
 pytest
 seaborn
