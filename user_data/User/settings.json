@@ -1,5 +1,8 @@
 {
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
     "python.diagnostics.sourceMapsEnabled": true,
+    "python.linting.pylintEnabled": false,
     "python.linting.flake8Enabled": true,
     "workbench.colorTheme": "Visual Studio Dark",
     "workbench.editorAssociations": [
@@ -7,5 +10,10 @@
             "viewType": "jupyter.notebook.ipynb",
             "filenamePattern": "*.ipynb"
         }
+    ],
+    "python.analysis.memory.keepLibraryAst": false,
+    "python.testing.pytestEnabled": true,
+    "python.autoComplete.extraPaths": [
+        "~/.local/lib/python3.7/site-packages"
     ]
 }
