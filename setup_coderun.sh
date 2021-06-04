@@ -1,7 +1,4 @@
-cp $CR_PROJECT_DIR/requirements.txt ./
-docker build --build-arg project_dir=$CR_PROJECT_DIR . -t code-server-python:latest
-rm requirements.txt
-
+#docker build . -t code-server-python:latest
 
 # install extensions
 docker run -it --rm \
@@ -11,5 +8,6 @@ docker run -it --rm \
   -u "$(id -u):$(id -g)" \
   -e "DOCKER_USER=$USER" \
   code-server-python:latest \
+  code-server \
   --config /home/coder/config.yaml \
   --install-extension ms-python.python

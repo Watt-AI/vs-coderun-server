@@ -1,5 +1,11 @@
 {
     "python.diagnostics.sourceMapsEnabled": true,
     "python.linting.flake8Enabled": true,
-    "workbench.colorTheme": "Visual Studio Dark"
+    "workbench.colorTheme": "Visual Studio Dark",
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ]
 }

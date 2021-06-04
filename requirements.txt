@@ -1,0 +1,17 @@
+coverage
+ipython
+flake8
+jupyter
+jupyterlab
+matplotlib
+numpy
+pandas
+pylint
+pytest
+seaborn
+scikit-learn
+scipy
+torch==1.7.1
+torchvision
+torchtext
+tqdm

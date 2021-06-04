@@ -1,6 +1,8 @@
 # VS CodeRun Server
 Remotely host VS Code and run it in your browser from anywhere. This code is designed to serve development 
-environments from the Nvidia DGX-1 or Clemson's Palmetto Cluster. 
+environments from the Nvidia DGX-1 or Clemson's Palmetto Cluster. This is
+a deployment of the code 
+maintained at https://github.com/cdr/code-server customized for data science in python.  
 
 # Setting up a new deployment
 1. **Server source code:** In a terminal, navigate to the directory for your project to download to prepare the code needed to serve coderun
