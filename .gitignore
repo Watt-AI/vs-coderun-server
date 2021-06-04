@@ -1,6 +1,7 @@
 data/
 models/
 .idea/
+code-server/
 __pycache__
 *~
 user_data/CachedExtensionVSIXs/*
