@@ -1,4 +1,4 @@
-#docker build . -t code-server-python:latest
+docker build . -t code-server-python:latest
 
 # install extensions
 docker run -it --rm \
