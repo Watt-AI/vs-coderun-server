@@ -1,8 +1,5 @@
 docker build . -t code-server-python:latest
 
-export SERVICE_URL=https://open-vsx.org/vscode/gallery
-export ITEM_URL=https://open-vsx.org/vscode/item
-
 # install extensions
 docker run -it --rm \
   -v "$CR_PROJECT_DIR:/home/coder/project" \
@@ -10,6 +7,8 @@ docker run -it --rm \
   -v "$PWD/config.yaml:/home/coder/config.yaml" \
   -u "$(id -u):$(id -g)" \
   -e "DOCKER_USER=$USER" \
+  -e "SERVICE_URL=https://open-vsx.org/vscode/gallery" \
+  -e "ITEM_URL=https://open-vsx.org/vscode/item" \
   code-server-python:latest \
   code-server \
   --config /home/coder/config.yaml \
