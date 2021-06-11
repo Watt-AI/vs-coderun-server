@@ -3,4 +3,5 @@ auth: none
 password: none
 cert: false
 disable-update-check: true
+disable-telemetry: true
 user-data-dir: user_data

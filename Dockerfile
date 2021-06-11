@@ -36,5 +36,4 @@ RUN rm requirements.txt
 # install coderun
 RUN curl -fsSL https://code-server.dev/install.sh | sh -s -- --prefix=/usr/local
 
-ENV USER=coder
-WORKDIR /home/coder
+#ENV USER=coder
