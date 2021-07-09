@@ -4,6 +4,10 @@
     "python.diagnostics.sourceMapsEnabled": true,
     "python.linting.pylintEnabled": false,
     "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [
+        "--max-line-length=120",
+        "--ignore=W291,W293",
+    ],
     "workbench.colorTheme": "Visual Studio Dark",
     "workbench.editorAssociations": [
         {
@@ -15,5 +19,9 @@
     "python.testing.pytestEnabled": true,
     "python.autoComplete.extraPaths": [
         "~/.local/lib/python3.9/site-packages"
-    ]
+    ],
+    "jupyter.allowUnauthorizedRemoteConnection": true,
+    "jupyter.askForKernelRestart": false,
+    "python.dataScience.askForKernelRestart": false,
+    "python.dataScience.sendSelectionToInteractiveWindow": true
 }

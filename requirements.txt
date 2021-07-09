@@ -13,6 +13,14 @@ pytest
 seaborn
 scikit-learn
 scipy
-torch==1.7.1
-torchvision==0.8.2
 tqdm
+
+# dgx-1 compatible versions of pytorch 
+--find-links https://download.pytorch.org/whl/torch_stable.html
+torch==1.7.0+cu101
+torchvision==0.8.1+cu101
+
+# nvidia dali
+--extra-index-url https://developer.download.nvidia.com/compute/redist
+nvidia-dali-cuda100
+

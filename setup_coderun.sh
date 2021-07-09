@@ -1,4 +1,4 @@
-docker build . -t code-server-python:latest
+docker build . -t coderun:ubuntu
 
 # install extensions
 docker run -it --rm \
@@ -9,7 +9,7 @@ docker run -it --rm \
   -e "DOCKER_USER=$USER" \
   -e "SERVICE_URL=https://open-vsx.org/vscode/gallery" \
   -e "ITEM_URL=https://open-vsx.org/vscode/item" \
-  code-server-python:latest \
+  coderun:ubuntu \
   code-server \
   --config /home/coder/config.yaml \
   --install-extension ms-python.python \
