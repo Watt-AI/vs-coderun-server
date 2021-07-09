@@ -1,1 +1,0 @@
-Extensions go in this directory.
