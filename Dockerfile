@@ -2,6 +2,7 @@ FROM nvcr.io/nvidia/cuda:10.0-cudnn7-runtime-ubuntu18.04
 
 # setup package manager and update
 RUN apt-get update
+RUN apt-get install ffmpeg libsm6 libxext6  -y
 RUN apt install software-properties-common -y
 RUN add-apt-repository ppa:deadsnakes/ppa
 RUN apt-get upgrade -y; apt-get autoremove -y
