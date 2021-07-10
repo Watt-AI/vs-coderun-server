@@ -10,7 +10,7 @@
         "--max-line-length=120",
         "--ignore=W291,W293",
     ],
-    "workbench.colorTheme": "Visual Studio Dark",
+    "workbench.colorTheme": "Dracula At Night",
     "workbench.editorAssociations": [
         {
             "viewType": "jupyter.notebook.ipynb",
@@ -25,5 +25,6 @@
     "jupyter.allowUnauthorizedRemoteConnection": true,
     "jupyter.askForKernelRestart": false,
     "python.dataScience.askForKernelRestart": false,
-    "python.dataScience.sendSelectionToInteractiveWindow": true
+    "python.dataScience.sendSelectionToInteractiveWindow": true,
+    "workbench.iconTheme": "vs-minimal"
 }
