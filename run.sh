@@ -1,6 +1,7 @@
-# run server
-#mkdir -p ~/.config
-docker run -it --rm --name $CR_CONTAINER_NAME -p "0.0.0.0:$CR_PORT:$CR_PORT" \
+# run vs code server
+docker run --rm -d --name $CR_CONTAINER_NAME \
+	-p "0.0.0.0:$CR_PORT:$CR_PORT" \
+	-p "0.0.0.0:$JUP_PORT:$JUP_PORT" \
   --runtime=nvidia \
   --ipc=host \
   -v "$CR_PROJECT_DIR:/home/coder/project" \
@@ -18,3 +19,7 @@ docker run -it --rm --name $CR_CONTAINER_NAME -p "0.0.0.0:$CR_PORT:$CR_PORT" \
     --install-extension KevinRose.vsc-python-indent; \
   code-server \
     --config /home/coder/config.yaml"
+
+# run jupyter server
+docker exec -it $CR_CONTAINER_NAME jupyter lab --ip 0.0.0.0 --port $JUP_PORT --allow-root
+

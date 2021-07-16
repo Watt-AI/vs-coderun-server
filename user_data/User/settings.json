@@ -26,5 +26,7 @@
     "jupyter.askForKernelRestart": false,
     "python.dataScience.askForKernelRestart": false,
     "python.dataScience.sendSelectionToInteractiveWindow": true,
-    "workbench.iconTheme": "vs-minimal"
+    "workbench.iconTheme": "vs-minimal",
+    "python.dataScience.disableJupyterAutoStart": true,
+    "terminal.integrated.tabs.enabled": true
 }
