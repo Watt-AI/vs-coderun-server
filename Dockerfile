@@ -1,4 +1,4 @@
-FROM nvcr.io/nvidia/cuda:10.0-cudnn7-runtime-ubuntu18.04
+FROM nvcr.io/nvidia/cuda:11.1.1-cudnn8-runtime-ubuntu20.04
 
 # setup package manager and update
 RUN apt-get update
@@ -11,7 +11,7 @@ RUN apt-get upgrade -y; apt-get autoremove -y
 RUN apt-get install -y \
     build-essential \
     vim \
-    emacs25 \
+    emacs \
     curl \
     libssl-dev \
     wget \

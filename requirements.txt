@@ -20,10 +20,6 @@ pytorch-lightning
 
 # dgx-1 compatible versions of pytorch 
 --find-links https://download.pytorch.org/whl/torch_stable.html
-torch==1.7.1+cu92
-torchvision==0.8.2+cu92
-
-# nvidia dali
---extra-index-url https://developer.download.nvidia.com/compute/redist
-nvidia-dali-cuda100
+torch==1.9.0+cu111
+torchvision==0.10.0+cu111
 

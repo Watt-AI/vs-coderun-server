@@ -1,4 +1,4 @@
-docker build . -t coderun:ubuntu
+docker build . -t coderun:palmetto
 
 # install extensions
 docker run -it --rm \
